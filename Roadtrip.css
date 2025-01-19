@@ -1,0 +1,83 @@
+body {
+   background-image: url(img/Roadtrip\ Background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#container {
+    
+    width: 100%;
+    height: 50%;
+    
+    overflow: hidden;
+    border-bottom: 15px solid #422a14;
+
+}
+
+#mountain {
+    width: 50%;
+    position: absolute;
+    bottom: -20%;
+    right: -50%;
+    z-index: 5;
+
+    animation-name: mountain;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+#steve {
+    width: 25%;
+    position: absolute;
+    bottom: 40%;
+    right: 50%;
+    z-index: 6;
+}
+#tree {
+    width:20%;
+    bottom: 10%;
+    position: absolute;
+
+    animation-name: tree;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+#grass {
+    width: 5%;
+    position: absolute;
+    bottom: 16%;
+    z-index: 2;
+
+    animation-name: grass;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes mountain {
+    to{
+        transform: translateX(-2000px);
+    }
+}
+@keyframes tree {
+    from{
+        transform: translateX(1350px);
+
+    }
+    to{
+        transform: translate(-50px);
+    }
+    
+}
+@keyframes grass {
+    from{
+        right: -200px;
+    }
+    to{
+        right: 2000px;
+    }
+}
+

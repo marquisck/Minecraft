@@ -1,0 +1,124 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+body {
+   background-color: orange !important; 
+
+}
+.cardBox {
+    width: 250px;
+    height: 350px;
+    margin-top: 5%;
+    perspective: 1000px;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(21, 216, 11);
+    border-radius: 10px;
+    transform-style: preserve-3d; 
+    transition: 1s ease;
+}
+
+.cardFront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.cardBack > .content {
+    width: 100%;
+    height: 100%;
+}
+
+.stats {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+}
+
+h1 {
+    text-indent: 20px;
+    font-size: 22px;
+}
+
+#prestonplayz h1 {
+    color: rgb(189, 101, 34);
+}
+
+#unspeakable h1 {
+    color: rgb(20, 175, 0);
+}
+
+#mrbeast h1 {
+    color: rgb(226, 39, 201);
+}
+
+#thebestcubehd h1 {
+    color: rgb(235, 227, 3);
+}
+
+p {
+    text-indent: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.cardBox:hover #first {
+    transform: rotateY(180deg);
+}
+
+#first > .cardBack {
+    transform: rotateY(180deg);
+}
+
+.cardBox:hover #second {
+    transform: rotateY(-180deg);
+}
+
+#second > .cardBack {
+    transform: rotateY(-180deg);
+}
+
+.cardBox:hover #third {
+    transform: rotateX(180deg);
+}
+
+#third > .cardBack {
+    transform: rotateX(180deg);
+}
+
+.cardBox:hover #fourth {
+    transform: rotateX(-180deg);
+}
+
+#fourth > .cardBack {
+    transform: rotateX(180deg);
+}

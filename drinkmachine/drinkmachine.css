@@ -1,0 +1,136 @@
+.body::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 45%);
+    width: 90%;
+    height: 200px;
+    background-color: #404040;
+    border-radius: 20px 20px 0 0;
+}
+.button::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background-color: #615e5e;
+    
+}
+.cup::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -13px;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #FFF;
+    border-radius: 50%;
+}
+.handle1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 20px;
+    background-color: #231f20;
+}
+.bottom::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: -8px;
+    width: 106%;
+    height: 26px;
+    background-color: #000;
+}
+.button2{
+    left: 70px;
+    animation: rotation 4s forwards;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+}
+.chocolate{
+    width: 6px;
+    height: 70px;
+    background-color: #74372b;
+    opacity: 0;
+    position: absolute;
+    top: 60px;
+    left: calc(50% + 7.25px);
+    animation: liquid 6s 4s linear;
+
+}
+@keyframes liquid{
+    0%{height: 0px;
+    opacity: 1;
+    }
+    5%{height: 0px;
+    opacity: 1;
+    }
+    20%{height: 240px;
+    opacity: 1;
+    }
+    95%{height: 240px;
+        opacity: 1;
+        }
+    100%{height: 240px;
+        opacity: 0;
+        }
+}
+.smoke1 {
+    opacity: 0;
+    bottom: 55px;
+    left: 230px;
+    animation: smokeOne 3s 4s linear;
+}
+.smoke2 {
+    opacity: 0;
+    bottom: 70px;
+    left: 245px;
+    animation: smokeTwo 3s 5s linear;
+
+}
+.smoke3 {
+    opacity: 0;
+    bottom: 65px;
+    left: 235px;
+    animation: smokeTwo 3s 6s linear;
+}
+.smoke4 {
+    opacity: 0;
+    bottom: 50px;
+    left: 220px;
+    animation: smokeOne 3s 5s linear;
+}
+@keyframes smokeOne{
+    0%{opacity: 0;
+        bottom: 20px
+    }
+    40%{opacity: .5;
+    bottom: 50px;}
+    80%{opacity: .3;
+    bottom: 110px;}
+    
+    100%{opacity: 0;
+    bottom: 110px;}
+}@keyframes smokeTwo{
+    0%{opacity: 0;
+        bottom: 40px
+    }
+    40%{opacity: .5;
+    bottom: 70px;}
+    80%{opacity: .3;
+    bottom: 110px;}
+    
+    100%{opacity: 0;
+    bottom: 110px;}
+}
